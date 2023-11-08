@@ -41,10 +41,10 @@ Depending on whether you have a CUDA capable GPU type:
     conda config --set channel_priority strict
 
     # CUDA capable GPU
-    conda create -n decode_env -c turagalab -c pytorch -c conda-forge decode cudatoolkit jupyterlab ipykernel
+    conda create -n decode_env -c turagalab -c pytorch -c conda-forge decode cudatoolkit jupyterlab ipykernel ipywidgets
 
     # macOS or no CUDA capable GPU
-    conda create -n decode_env -c turagalab -c pytorch -c conda-forge decode jupyterlab ipykernel
+    conda create -n decode_env -c turagalab -c pytorch -c conda-forge decode jupyterlab ipykernel ipywidgets
 
     # after previous command (all platforms)
     conda activate decode_env
